@@ -19,6 +19,7 @@ logs
 .DS_Store
 .fleet
 .idea
+.gitpod
 
 # Local env files
 .env

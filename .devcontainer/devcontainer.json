@@ -1,0 +1,44 @@
+{
+	"name": "Node.js & TypeScript",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	// TODO: Add more detailed file structures and define clear processes for tasks.
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "pnpm install && pnpm dev",
+	// Configure tool-specific properties.
+	"customizations": {
+		"jetbrains": {
+			"backend": "WebStorm"
+		},
+		"vscode": {
+			"extensions": [
+				"Nuxt.mdc",
+				"amazonwebservices.codewhisperer-for-command-line-companion",
+				"michelemelluso.code-beautifier",
+				"WallabyJs.console-ninja",
+				"google.gemini-cli-vscode-ide-companion",
+				"google.geminicodeassist",
+				"formulahendry.docker-explorer",
+				"formulahendry.docker-extension-pack",
+				"henriiik.docker-linter",
+				"ms-azuretools.vscode-docker",
+				"p1c2u.docker-compose",
+				"ms-azuretools.vscode-containers",
+				"ms-vscode-remote.remote-containers",
+				"bierner.markdown-preview-github-styles",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode",
+				"antfu.iconify",
+				"ms-vscode-remote.remote-ssh",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
